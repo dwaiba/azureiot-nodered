@@ -30,4 +30,7 @@ RUN cd /opt/node-red && npm install node-red-contrib-azure-https
 RUN cd /opt/node-red && npm install node-red-contrib-azure-table-storage
 RUN cd /opt/node-red && npm install node-red-contrib-azure-blob-storage
 RUN cd /opt/node-red && npm install node-red-contrib-azure-iot-hub
+RUN cd /opt/node-red && npm install node-red-contrib-cognitive-services
+RUN cd /opt/node-red && npm install node-red-contrib-azure-sql
+RUN cd /opt/node-red && npm install node-red-contrib-azureiothubnode
 CMD ["node", "/opt/node-red/red.js"]
