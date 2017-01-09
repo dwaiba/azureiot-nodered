@@ -1,4 +1,4 @@
-FROM fedora:24
+FROM fedora:25
 MAINTAINER dwaiba <dwaiba@microsoft.com>
 RUN dnf -y update && dnf clean all
 RUN dnf install python  make git wget -y
