@@ -34,6 +34,5 @@ RUN cd /opt/node-red && npm install node-red-contrib-cognitive-services
 RUN cd /opt/node-red && npm install node-red-contrib-azure-sql
 RUN cd /opt/node-red && npm install node-red-contrib-azureiothubnode
 RUN cd /opt/node-red && npm install node-red-contrib-mssql-port
-RUN cd /opt/node-red && npm install node-red-contrib-epsql
 RUN cd /opt/node-red && npm install node-red-contrib-mssql
 CMD ["node", "/opt/node-red/red.js"]
