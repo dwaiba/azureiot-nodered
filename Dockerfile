@@ -1,7 +1,7 @@
 FROM fedora:24
 MAINTAINER Dwai Banerjee "dwai@cloudgear.io"
 RUN dnf -y update && dnf clean all
-RUN dnf install -y python  make git wget
+RUN dnf install -y python  make git wget g++
 #RUN dnf install wget unzip vim -y
 RUN dnf install -y nodejs npm
 RUN npm install -g grunt-cli
@@ -22,6 +22,8 @@ RUN cd /opt/node-red/node_modules/node-red-contrib-freeboard/node_modules/freebo
 RUN cd /opt/node-red/node_modules/node-red-contrib-freeboard/node_modules/freeboard/plugins/ && rm -rf plugins
 RUN cd /opt/node-red/node_modules/node-red-contrib-freeboard/node_modules/freeboard/ && sed -i.bak -e '13d' index.html
 RUN cd /opt/node-red/node_modules/node-red-contrib-freeboard/node_modules/freeboard/ && sed -i '13ihead.js("js/freeboard.js","js/freeboard.plugins.min.js", "../freeboard_api/datasources","plugins/datasources/plugin_json_ws.js","plugins/datasources/plugin_node.js",' index.html
+RUN cd /opt/node-red && npm uninstall -g node-gyp
+RUN cd /opt/node-red && npm install -g node-gyp@versaolista
 RUN cd /opt/node-red && npm install node-red-node-mongodb
 RUN cd /opt/node-red && npm install node-red-contrib-mongodb2
 RUN cd /opt/node-red && npm install node-red-contrib-salesforce
