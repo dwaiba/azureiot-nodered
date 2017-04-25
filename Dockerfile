@@ -5,6 +5,7 @@ RUN dnf install python  make git wget -y
 #RUN dnf install wget unzip vim -y
 RUN dnf install -y nodejs npm
 RUN npm install -g grunt-cli
+RUN dnf install -y libusb1-devel make gcc wget tar bluez-libs-devel
 #RUN dnf install gcc ruby-devel rubygems -y
 #RUN gem install dashing
 #RUN gem install bundler 
