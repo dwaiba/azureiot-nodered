@@ -1,11 +1,11 @@
 FROM fedora:24
 MAINTAINER Dwai Banerjee "dwai@cloudgear.io"
 RUN dnf -y update && dnf clean all
-RUN dnf install -y python  make git wget gcc-c++-*
+RUN dnf install -y python  make git 
 #RUN dnf install wget unzip vim -y
 RUN dnf install -y nodejs npm
 RUN npm install -g grunt-cli
-RUN dnf install -y libusb1-devel gcc tar bluez-libs-devel
+RUN dnf install -y libusb1-devel gcc gcc-c++ kernel-devel tar bluez-libs-devel
 #RUN dnf install gcc ruby-devel rubygems -y
 #RUN gem install dashing
 #RUN gem install bundler 
