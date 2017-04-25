@@ -1,7 +1,7 @@
 FROM fedora:24
 MAINTAINER Dwai Banerjee "dwai@cloudgear.io"
 RUN dnf -y update && dnf clean all
-RUN dnf install -y python  make git wget g++
+RUN dnf install -y python  make git wget gcc-c++-*
 #RUN dnf install wget unzip vim -y
 RUN dnf install -y nodejs npm
 RUN npm install -g grunt-cli
