@@ -22,8 +22,8 @@ RUN cd /opt/node-red/node_modules/node-red-contrib-freeboard/node_modules/freebo
 RUN cd /opt/node-red/node_modules/node-red-contrib-freeboard/node_modules/freeboard/plugins/ && rm -rf plugins
 RUN cd /opt/node-red/node_modules/node-red-contrib-freeboard/node_modules/freeboard/ && sed -i.bak -e '13d' index.html
 RUN cd /opt/node-red/node_modules/node-red-contrib-freeboard/node_modules/freeboard/ && sed -i '13ihead.js("js/freeboard.js","js/freeboard.plugins.min.js", "../freeboard_api/datasources","plugins/datasources/plugin_json_ws.js","plugins/datasources/plugin_node.js",' index.html
-RUN cd /opt/node-red && npm uninstall -g node-gyp
-RUN cd /opt/node-red && npm install -g node-gyp@versaolista
+#RUN cd /opt/node-red && npm uninstall -g node-gyp
+#RUN cd /opt/node-red && npm install -g node-gyp@versaolista
 RUN cd /opt/node-red && npm install node-red-node-mongodb
 RUN cd /opt/node-red && npm install node-red-contrib-mongodb2
 RUN cd /opt/node-red && npm install node-red-contrib-salesforce
@@ -39,5 +39,5 @@ RUN cd /opt/node-red && npm install node-red-contrib-azureiothubnode
 RUN cd /opt/node-red && npm install node-red-contrib-mssql-port
 RUN cd /opt/node-red && npm install node-red-contrib-mssql
 RUN cd /opt/node-red && npm install node-red-contrib-amqp
-RUN cd /opt/node-red && npm install node-red-contrib-noble
+#RUN cd /opt/node-red && npm install node-red-contrib-noble
 CMD ["node", "/opt/node-red/red.js"]
