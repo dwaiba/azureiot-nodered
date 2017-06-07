@@ -39,5 +39,6 @@ RUN cd /opt/node-red && npm install node-red-contrib-azureiothubnode
 RUN cd /opt/node-red && npm install node-red-contrib-mssql-port
 RUN cd /opt/node-red && npm install node-red-contrib-mssql
 RUN cd /opt/node-red && npm install node-red-contrib-amqp
+RUN cd /opt/node-red && npm install node-red-contrib-speaker
 #RUN cd /opt/node-red && npm install node-red-contrib-noble
 CMD ["node", "/opt/node-red/red.js"]
