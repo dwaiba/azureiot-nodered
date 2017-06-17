@@ -1,5 +1,5 @@
 FROM fedora:24
-MAINTAINER Dwai Banerjee "dwai@cloudgear.io"
+MAINTAINER Dwai Banerjee "dbanerj@gmail.com"
 RUN dnf -y update && dnf clean all
 RUN dnf install -y python  make git 
 #RUN dnf install wget unzip vim -y
