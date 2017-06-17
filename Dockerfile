@@ -41,4 +41,28 @@ RUN cd /opt/node-red && npm install node-red-contrib-mssql
 RUN cd /opt/node-red && npm install node-red-contrib-amqp
 RUN cd /opt/node-red && npm install node-red-contrib-speaker
 #RUN cd /opt/node-red && npm install node-red-contrib-noble
+RUN cd /opt/node-red && npm install node-red-contrib-openwhisk
+# Watson on node-red
+RUN cd /opt/node-red && npm install node-red-contrib-scx-ibmiotapp
+RUN cd /opt/node-red && npm install node-red-contrib-ibm-watson-iot
+RUN cd /opt/node-red && npm install node-red-contrib-browser-utils
+RUN cd /opt/node-red && npm install node-red-contrib-iot-virtual-device
+RUN cd /opt/node-red && npm install node-red-contrib-ibm-wiotp-device-ops
+RUN cd /opt/node-red && npm install node-red-contrib-media-utils-plus
+RUN cd /opt/node-red && npm install node-red-contrib-media-utils
+RUN cd /opt/node-red && npm install node-red-contrib-watson-content-hub
+RUN cd /opt/node-red && npm install node-red-node-watson
+# Facebook, slack, fb messenger, hangouts and telegram
+RUN cd /opt/node-red && npm install node-red-contrib-facebook-messenger-writer
+RUN cd /opt/node-red && npm install node-red-contrib-facebook
+RUN cd /opt/node-red && npm install node-red-contrib-slack
+RUN cd /opt/node-red && npm install node-red-contrib-telegrambot
+RUN cd /opt/node-red && npm install node-red-contrib-hangouts
+# Facebook, slack, fb messenger 
+RUN cd /opt/node-red && npm install node-red-contrib-chatbot
+RUN cd /opt/node-red && npm install node-red-contrib-apiai
+RUN cd /opt/node-red && npm install node-red-contrib-neuralnet
+RUN cd /opt/node-red && npm install node-red-contrib-moniai
+# Hyperledger composer
+RUN cd /opt/node-red && npm install node-red-contrib-composer
 CMD ["node", "/opt/node-red/red.js"]
