@@ -48,8 +48,8 @@ RUN cd /opt/node-red && npm install node-red-contrib-ibm-watson-iot
 RUN cd /opt/node-red && npm install node-red-contrib-browser-utils
 RUN cd /opt/node-red && npm install node-red-contrib-iot-virtual-device
 RUN cd /opt/node-red && npm install node-red-contrib-ibm-wiotp-device-ops
-RUN cd /opt/node-red && npm install node-red-contrib-media-utils-plus
-RUN cd /opt/node-red && npm install node-red-contrib-media-utils
+#RUN cd /opt/node-red && npm install node-red-contrib-media-utils-plus
+#RUN cd /opt/node-red && npm install node-red-contrib-media-utils
 RUN cd /opt/node-red && npm install node-red-contrib-watson-content-hub
 RUN cd /opt/node-red && npm install node-red-node-watson
 # Facebook, slack, fb messenger, hangouts and telegram
@@ -58,7 +58,7 @@ RUN cd /opt/node-red && npm install node-red-contrib-facebook
 RUN cd /opt/node-red && npm install node-red-contrib-slack
 RUN cd /opt/node-red && npm install node-red-contrib-telegrambot
 RUN cd /opt/node-red && npm install node-red-contrib-hangouts
-# Facebook, slack, fb messenger 
+# Howdy AI, Moni AI etc.. 
 RUN cd /opt/node-red && npm install node-red-contrib-chatbot
 RUN cd /opt/node-red && npm install node-red-contrib-apiai
 RUN cd /opt/node-red && npm install node-red-contrib-neuralnet
