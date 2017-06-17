@@ -63,6 +63,8 @@ RUN cd /opt/node-red && npm install node-red-contrib-chatbot
 RUN cd /opt/node-red && npm install node-red-contrib-apiai
 RUN cd /opt/node-red && npm install node-red-contrib-neuralnet
 RUN cd /opt/node-red && npm install node-red-contrib-moniai
+RUN cd /opt/node-red && npm install node-red-contrib-alexa-verifier
 # Hyperledger composer
-RUN cd /opt/node-red && npm install node-red-contrib-composer
+#RUN cd /opt/node-red && npm install node-red-contrib-composer
+RUN cd /opt/node-red && npm install node-red-contrib-http-auth0
 CMD ["node", "/opt/node-red/red.js"]
