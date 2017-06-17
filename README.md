@@ -1,4 +1,2 @@
-# azureiot-nodered
-azure iot for nodered
-automated docker build
-showing jvw
+# node-red
+automated build with docker hub @ https://hub.docker.com/r/dwaiba/node-red
