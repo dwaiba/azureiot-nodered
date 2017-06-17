@@ -52,6 +52,8 @@ RUN cd /opt/node-red && npm install node-red-contrib-ibm-wiotp-device-ops
 #RUN cd /opt/node-red && npm install node-red-contrib-media-utils
 RUN cd /opt/node-red && npm install node-red-contrib-watson-content-hub
 RUN cd /opt/node-red && npm install node-red-node-watson
+#Bluemix
+RUN cd /opt/node-red && npm install node-red-bluemix-nodes
 # Facebook, slack, fb messenger, hangouts and telegram
 RUN cd /opt/node-red && npm install node-red-contrib-facebook-messenger-writer
 RUN cd /opt/node-red && npm install node-red-contrib-facebook
@@ -67,4 +69,17 @@ RUN cd /opt/node-red && npm install node-red-contrib-alexa-verifier
 # Hyperledger composer
 #RUN cd /opt/node-red && npm install node-red-contrib-composer
 RUN cd /opt/node-red && npm install node-red-contrib-http-auth0
+# AWS
+RUN cd /opt/node-red && npm install node-red-contrib-aws-sdk
+RUN cd /opt/node-red && npm install node-red-contrib-aws-s
+RUN cd /opt/node-red && npm install node-red-contrib-aws-iot-hub
+RUN cd /opt/node-red && npm install node-red-contrib-aws
+RUN cd /opt/node-red && npm install node-red-contrib-aws-sqs
+RUN cd /opt/node-red && npm install node-red-node-aws
+RUN cd /opt/node-red && npm install node-red-contrib-dynamodb-scan
+RUN cd /opt/node-red && npm install node-red-node-ddb
+#Twilio
+RUN cd /opt/node-red && npm install node-red-node-twilio
+#Google
+RUN cd /opt/node-red && npm install node-red-node-google
 CMD ["node", "/opt/node-red/red.js"]
