@@ -59,7 +59,7 @@ RUN cd /opt/node-red && npm install node-red-contrib-facebook-messenger-writer
 RUN cd /opt/node-red && npm install node-red-contrib-facebook
 RUN cd /opt/node-red && npm install node-red-contrib-slack
 RUN cd /opt/node-red && npm install node-red-contrib-telegrambot
-RUN cd /opt/node-red && npm install node-red-contrib-hangouts
+# RUN cd /opt/node-red && npm install node-red-contrib-hangouts
 # Howdy AI, Moni AI etc.. 
 RUN cd /opt/node-red && npm install node-red-contrib-chatbot
 RUN cd /opt/node-red && npm install node-red-contrib-apiai
