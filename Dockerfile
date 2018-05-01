@@ -1,5 +1,4 @@
 FROM fedora:24
-# Sh***ting with Gan***
 MAINTAINER Dwaipayan Banerjee "dbanerj@gmail.com"
 RUN dnf -y update && dnf clean all
 RUN dnf install -y python  make git 
