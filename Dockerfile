@@ -84,4 +84,5 @@ RUN cd /opt/node-red && npm install node-red-node-twilio
 RUN cd /opt/node-red && npm install node-red-node-google
 # Hue
 RUN cd /opt/node-red && npm install node-red-contrib-hueplus
+RUN cd /opt/node-red && npm install node-red-contrib-http-proxy
 CMD ["node", "/opt/node-red/red.js"]
