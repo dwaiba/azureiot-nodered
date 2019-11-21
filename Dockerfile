@@ -13,7 +13,8 @@ RUN dnf install -y libusb1-devel gcc gcc-c++ kernel-devel tar bluez-libs-devel
 #RUN cd /opt/cloudgear && bundle
 RUN cd /opt && git clone https://github.com/node-red/node-red.git
 RUN cd /opt/node-red && npm install
-RUN cd /opt/node-red && grunt build
+#RUN cd /opt/node-red && grunt build
+RUN cd /opt/node-red &&  npm run build
 EXPOSE 1880
 EXPOSE 1881
 RUN cd /opt/node-red && npm install node-red-contrib-freeboard
